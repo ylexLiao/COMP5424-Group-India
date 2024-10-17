@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{74103FDD-BB09-7BA6-7B84-D44D026A0796}</ProjectGuid>
+    <ProjectGuid>{99366B3C-E077-59FD-C439-29E571D8C710}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -60,7 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\HealthController.cs" />
-    <Compile Include="Assets\Blink\Art\Weapons\LowPoly\FreeRPGWeapons\Axes\WeaponAttack.cs" />
     <Compile Include="Assets\Scripts\Weapons\Player.cs" />
     <Compile Include="Assets\Scripts\EnermyController.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponBase.cs" />
@@ -69,8 +68,12 @@
     <Compile Include="Assets\Scripts\Weapons\Axe.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\WizardPolyArt\Shader\PolyArtMaskTint.shader" />
-    <None Include="Assets\WizardPolyArt\SRP\HowToTestSRPs.txt" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Asteroid.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\POLYGON_Triplanar.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Triplanar_ObjectSpace.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Planet.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Planet_Lines.shader" />
+    <None Include="Assets\PolygonSciFiSpace\Shaders\POLYGON_SpaceShip_Rim.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -1056,23 +1059,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="SteamVR_Input_Editor.csproj">
-      <Project>{48DD52F1-9D2D-39E2-BC7F-26DEDEBB32C2}</Project>
+      <Project>{443B912F-383E-4F8C-4D3F-C7DC33F97358}</Project>
       <Name>SteamVR_Input_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Actions.csproj">
-      <Project>{295C9894-6660-2946-C8A2-FD2C0A68CE6D}</Project>
+      <Project>{50E3EFC3-B927-E1E7-EADF-0EB3EDD6D76F}</Project>
       <Name>SteamVR_Actions</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Editor.csproj">
-      <Project>{FEE720F1-482D-CE3E-89B3-CCD81019B019}</Project>
+      <Project>{63CC7486-4B23-845A-5798-500971947AD9}</Project>
       <Name>SteamVR_Editor</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR.csproj">
-      <Project>{A671E90B-B4F9-3289-F2FD-ABCD692F0BC4}</Project>
+      <Project>{F9D3311D-4161-259B-190F-38D4C234A395}</Project>
       <Name>SteamVR</Name>
     </ProjectReference>
     <ProjectReference Include="SteamVR_Windows_EditorHelper.csproj">
-      <Project>{5B6F4D76-33A8-D7FA-0256-91ADB67B8C41}</Project>
+      <Project>{8BD3A928-D054-46EE-6E25-5B09865D7A26}</Project>
       <Name>SteamVR_Windows_EditorHelper</Name>
     </ProjectReference>
   </ItemGroup>
