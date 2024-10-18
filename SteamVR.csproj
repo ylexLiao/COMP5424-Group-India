@@ -102,6 +102,7 @@
     <Compile Include="Assets\Stream\SteamVR\Input\SteamVR_Input_References.cs" />
     <Compile Include="Assets\Stream\SteamVR\InteractionSystem\Core\Scripts\InteractableDebug.cs" />
     <Compile Include="Assets\Stream\SteamVR\InteractionSystem\Core\Scripts\HoverButton.cs" />
+    <Compile Include="Assets\Stream\SteamVR\OpenVRUnityXRPackage\Editor\OpenVRSimpleJSON.cs" />
     <Compile Include="Assets\Stream\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Vector2Event.cs" />
     <Compile Include="Assets\Stream\SteamVR\InteractionSystem\Core\Scripts\DestroyOnParticleSystemDeath.cs" />
     <Compile Include="Assets\Stream\SteamVR\Input\SteamVR_Behaviour_Vector2.cs" />
@@ -164,6 +165,7 @@
     <Compile Include="Assets\Stream\SteamVR\InteractionSystem\Teleport\Scripts\TeleportPoint.cs" />
     <Compile Include="Assets\Stream\SteamVR\InteractionSystem\Core\Scripts\ItemPackageReference.cs" />
     <Compile Include="Assets\Stream\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_SkeletonEvent.cs" />
+    <Compile Include="Assets\Stream\SteamVR\OpenVRUnityXRPackage\Editor\OpenVRPackageInstaller.cs" />
     <Compile Include="Assets\Stream\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Skeleton_TrackingChangedEvent.cs" />
     <Compile Include="Assets\Stream\SteamVR\Input\SteamVR_UpdateModes.cs" />
     <Compile Include="Assets\Stream\SteamVR\InteractionSystem\Teleport\Scripts\Teleport.cs" />

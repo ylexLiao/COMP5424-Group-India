@@ -60,20 +60,26 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\HealthController.cs" />
+    <Compile Include="Assets\Scripts\Weapons\VRWeaponController.cs" />
     <Compile Include="Assets\Scripts\Weapons\Player.cs" />
     <Compile Include="Assets\Scripts\EnermyController.cs" />
     <Compile Include="Assets\Scripts\Weapons\WeaponBase.cs" />
     <Compile Include="Assets\Scripts\FloorScript.cs" />
+    <Compile Include="Assets\Scripts\Weapons\Sword.cs" />
     <Compile Include="Assets\Scripts\HorseController.cs" />
     <Compile Include="Assets\Scripts\Weapons\Axe.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Global.shader" />
     <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Asteroid.shader" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Object.shader" />
     <None Include="Assets\PolygonSciFiSpace\Shaders\POLYGON_Triplanar.shader" />
     <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Triplanar_ObjectSpace.shader" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Global.shader" />
     <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Planet.shader" />
     <None Include="Assets\PolygonSciFiSpace\Shaders\SyntyStudios_Planet_Lines.shader" />
     <None Include="Assets\PolygonSciFiSpace\Shaders\POLYGON_SpaceShip_Rim.shader" />
+    <None Include="Assets\PolygonPrototype\Shaders\Prototype_Glass_Object.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -115,7 +115,7 @@ namespace Valve.VR
 				PlayerSettings.singlePassStereoRendering != recommended_SinglePassStereoRendering) ||
 #endif
             forceShow;
-            show = false;
+
             if (show)
             {
                 window = GetWindow<SteamVR_UnitySettingsWindow>(true);

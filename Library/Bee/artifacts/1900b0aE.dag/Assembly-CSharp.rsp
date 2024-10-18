@@ -378,6 +378,8 @@
 "Assets/Scripts/HorseController.cs"
 "Assets/Scripts/Weapons/Axe.cs"
 "Assets/Scripts/Weapons/Player.cs"
+"Assets/Scripts/Weapons/Sword.cs"
+"Assets/Scripts/Weapons/VRWeaponController.cs"
 "Assets/Scripts/Weapons/WeaponBase.cs"
 -langversion:9.0
 /deterministic

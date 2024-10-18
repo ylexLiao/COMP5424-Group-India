@@ -499,6 +499,8 @@
 "Assets/Stream/SteamVR/InteractionSystem/Teleport/Scripts/TeleportMarkerBase.cs"
 "Assets/Stream/SteamVR/InteractionSystem/Teleport/Scripts/TeleportPoint.cs"
 "Assets/Stream/SteamVR/InteractionSystem/Teleport/Scripts/TeleportURPHelper.cs"
+"Assets/Stream/SteamVR/OpenVRUnityXRPackage/Editor/OpenVRPackageInstaller.cs"
+"Assets/Stream/SteamVR/OpenVRUnityXRPackage/Editor/OpenVRSimpleJSON.cs"
 "Assets/Stream/SteamVR/Plugins/openvr_api.cs"
 "Assets/Stream/SteamVR/Scripts/SteamVR.cs"
 "Assets/Stream/SteamVR/Scripts/SteamVR_Behaviour.cs"

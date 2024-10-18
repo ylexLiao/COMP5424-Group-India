@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.myvrg.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "D:\\UnityProject\\My VRG\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\YLex\\Documents\\GitHub\\COMP5424-Group-India\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "My VRG [Testing]"
