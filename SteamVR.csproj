@@ -164,8 +164,8 @@
     <Compile Include="Assets\Stream\SteamVR\Input\SteamVR_Action_Vector3.cs" />
     <Compile Include="Assets\Stream\SteamVR\InteractionSystem\Teleport\Scripts\TeleportPoint.cs" />
     <Compile Include="Assets\Stream\SteamVR\InteractionSystem\Core\Scripts\ItemPackageReference.cs" />
-    <Compile Include="Assets\Stream\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_SkeletonEvent.cs" />
     <Compile Include="Assets\Stream\SteamVR\OpenVRUnityXRPackage\Editor\OpenVRPackageInstaller.cs" />
+    <Compile Include="Assets\Stream\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_SkeletonEvent.cs" />
     <Compile Include="Assets\Stream\SteamVR\Input\BehaviourUnityEvents\SteamVR_Behaviour_Skeleton_TrackingChangedEvent.cs" />
     <Compile Include="Assets\Stream\SteamVR\Input\SteamVR_UpdateModes.cs" />
     <Compile Include="Assets\Stream\SteamVR\InteractionSystem\Teleport\Scripts\Teleport.cs" />
