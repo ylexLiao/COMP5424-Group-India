@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.XR;
 
 public class WeaponSwitcher : MonoBehaviour
 {
@@ -10,7 +9,13 @@ public class WeaponSwitcher : MonoBehaviour
 
     void Start()
     {
-        // 初始化时只激活第一个武器组
+        // 禁用所有武器组
+        for (int i = 0; i < weaponGroups.Length; i++)
+        {
+            weaponGroups[i].SetActive(false);
+        }
+
+        // 默认启用第一个武器组
         ActivateWeaponGroup(currentWeaponGroup);
     }
 
@@ -19,11 +24,11 @@ public class WeaponSwitcher : MonoBehaviour
         // 使用 Oculus 手柄按钮进行武器组切换
         if (OVRInput.GetDown(OVRInput.Button.One))  // A 按钮 (右手)
         {
-            ActivateWeaponGroup(0);  // 切换到第一组武器 (远程武器：盾和枪)
+            ActivateWeaponGroup(0);  // 切换到第一组武器 (例如：枪和盾)
         }
         if (OVRInput.GetDown(OVRInput.Button.Two))  // B 按钮 (右手)
         {
-            ActivateWeaponGroup(1);  // 切换到第二组武器 (近战武器：盾和剑)
+            ActivateWeaponGroup(1);  // 切换到第二组武器 (例如：剑和盾)
         }
         if (OVRInput.GetDown(OVRInput.Button.Three))  // X 按钮 (左手)
         {
@@ -33,19 +38,17 @@ public class WeaponSwitcher : MonoBehaviour
 
     void ActivateWeaponGroup(int index)
     {
-        // 先禁用所有武器组
+        // 禁用所有武器组
         for (int i = 0; i < weaponGroups.Length; i++)
         {
-            weaponGroups[i].SetActive(false);
+            weaponGroups[i].SetActive(false);  // 先禁用所有武器
         }
 
         // 启用指定的武器组
         if (index >= 0 && index < weaponGroups.Length)
         {
-            weaponGroups[index].SetActive(true);
+            weaponGroups[index].SetActive(true);  // 激活指定的武器组
             currentWeaponGroup = index;  // 更新当前武器组索引
         }
     }
 }
-
-
