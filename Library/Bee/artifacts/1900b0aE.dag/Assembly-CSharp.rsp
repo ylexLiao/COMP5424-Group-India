@@ -381,9 +381,11 @@
 "Assets/Scripts/Weapons/Bullet.cs"
 "Assets/Scripts/Weapons/Gun.cs"
 "Assets/Scripts/Weapons/Player.cs"
+"Assets/Scripts/Weapons/Shield.cs"
 "Assets/Scripts/Weapons/Sword.cs"
 "Assets/Scripts/Weapons/VRWeaponController.cs"
 "Assets/Scripts/Weapons/WeaponBase.cs"
+"Assets/Scripts/Weapons/WeaponSwitcher.cs"
 -langversion:9.0
 /deterministic
 /optimize+
