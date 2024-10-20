@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Gun : MonoBehaviour
 {
     [Header("Gun Settings")]
@@ -10,49 +11,21 @@ public class Gun : MonoBehaviour
     public float range = 100f;            // 射击范围
     public float attackCooldown = 0.5f;   // 攻击冷却时间
     private float lastShotTime = 0;       // 上次射击的时间
-    public LineRenderer aimLine;          // 瞄准线
-    public Transform firePoint;           // 枪口位置
-    public float aimDistance = 100f;      // 瞄准线长度
 
     [Header("Bullet Settings")]
     public GameObject bulletPrefab;       // 子弹预制体
+    public Transform firePoint;           // 子弹发射的位置
     public float bulletSpeed = 20f;       // 子弹速度
     public int maxAmmo = 10;              // 最大弹药数
     private int currentAmmo;              // 当前弹药数
-
-    private bool isReloading = false;     // 标志是否在装填弹药
-    public float reloadTime = 3f;         // 装弹时间
 
     void Start()
     {
         currentAmmo = maxAmmo;            // 初始化弹药数
     }
 
-    void Update()
-    {
-        DrawAimLine();
-    }
-
-    void DrawAimLine()
-    {
-        // 起点：枪口
-        aimLine.SetPosition(0, firePoint.position);
-
-        // 终点：枪口向前延伸一定距离
-        Vector3 endPosition = firePoint.position + firePoint.forward * aimDistance;
-        aimLine.SetPosition(1, endPosition);
-    }
-
     public void Shoot()
     {
-        Debug.Log("Shoot method called!");  // 调试信息
-
-        if (isReloading)
-        {
-            Debug.Log("Currently reloading, cannot shoot.");
-            return;
-        }
-
         // 检查是否过了冷却时间
         if (Time.time < lastShotTime + attackCooldown)
         {
@@ -63,8 +36,7 @@ public class Gun : MonoBehaviour
         // 检查是否有弹药
         if (currentAmmo <= 0)
         {
-            Debug.Log("No ammo left! Reloading...");
-            StartCoroutine(Reload());  // 开始装弹
+            Debug.Log("No ammo left! Reload required.");
             return;
         }
 
@@ -100,15 +72,9 @@ public class Gun : MonoBehaviour
     }
 
     // Reload function for testing
-    IEnumerator Reload()
+    public void Reload()
     {
-        isReloading = true;
-        Debug.Log("Reloading for " + reloadTime + " seconds...");
-
-        yield return new WaitForSeconds(reloadTime);  // 等待装弹时间
-
         currentAmmo = maxAmmo;
-        Debug.Log("Reload complete! Ammo refilled to " + maxAmmo);
-        isReloading = false;
+        Debug.Log("Gun reloaded. Ammo refilled to " + maxAmmo);
     }
 }

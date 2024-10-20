@@ -37,9 +37,17 @@ public class HealthController : MonoBehaviour
             Die(); // 执行死亡逻辑
         }
     }
+    //恢复生命
+    public void AddHealth(int amount)
+    {
+        currentHealth += amount;
+        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+        Debug.Log("Current Health: " + currentHealth);
+    }
 
-    // 单位死亡时调用
-    private void Die()
+
+// 单位死亡时调用
+private void Die()
     {
         // 设置死亡动画
         animator.SetTrigger("Die");

@@ -6,12 +6,6 @@ public class Bullet : MonoBehaviour
 {
     public int damage = 10;  // 子弹的伤害
 
-    void Start()
-    {
-        // 5秒后自动销毁子弹，防止子弹飞行过远或丢失未销毁
-        Destroy(gameObject, 5f);
-    }
-
     void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Enemy")
@@ -20,11 +14,6 @@ public class Bullet : MonoBehaviour
             if (enemyHealth != null)
             {
                 enemyHealth.TakeDamage(damage);  // 对敌人造成伤害
-                Debug.Log("Enemy hit! Dealt " + damage + " damage.");
-            }
-            else
-            {
-                Debug.LogError("Enemy does not have EnemyHealth component!");
             }
         }
 

@@ -6,6 +6,8 @@ public class EnermyController : MonoBehaviour
 {
     public Transform target; // 目标对象
     public float moveSpeed = 3f; // 移动速度
+    private float currentSpeed;
+    private bool isSlowed = false;//减速效果
     public float attackRange = 2f; // 攻击范围
     public float attackCooldown = 1f; // 攻击冷却时间
     public float attackDamage = 10f; // 攻击造成的伤害
@@ -44,6 +46,9 @@ public class EnermyController : MonoBehaviour
         }
     }
 
+
+
+
         // 面向目标
     private void TowardsTarget()
     {
@@ -70,6 +75,26 @@ public class EnermyController : MonoBehaviour
         transform.position += direction * moveSpeed * Time.deltaTime;
     }
 
+    //减速
+    public void ApplySlowdown(float factor, float duration)
+    {
+        if (!isSlowed)
+        {
+            StartCoroutine(SlowdownCoroutine(factor, duration));
+        }
+    }
+
+    private IEnumerator SlowdownCoroutine(float factor, float duration)
+    {
+        isSlowed = true;
+        currentSpeed *= factor;
+        yield return new WaitForSeconds(duration);
+        currentSpeed = moveSpeed;
+        isSlowed = false;
+    }
+
+
+
     // 使单位面朝移动方向的函数
     private void RotateTowardsTarget(Vector3 direction)
     {
@@ -79,6 +104,7 @@ public class EnermyController : MonoBehaviour
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * moveSpeed);
         }
     }
+
 
     // 调整单位位置以保持其靠近地面
     private void AdjustToGround()
