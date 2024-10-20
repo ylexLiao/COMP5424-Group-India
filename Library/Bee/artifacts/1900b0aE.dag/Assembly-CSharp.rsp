@@ -588,6 +588,7 @@
 "Assets/Scripts/Weapons/Sword.cs"
 "Assets/Scripts/Weapons/VRWeaponController.cs"
 "Assets/Scripts/Weapons/WeaponBase.cs"
+"Assets/Scripts/Weapons/WeaponManager.cs"
 "Assets/Scripts/Weapons/WeaponSwitcher.cs"
 -langversion:9.0
 /deterministic
