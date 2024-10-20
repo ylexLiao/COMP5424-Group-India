@@ -7,7 +7,7 @@ using System;
 public class HealthController : MonoBehaviour
 {
     public float maxHealth = 100f;  // 最大生命值
-    private float currentHealth;
+    public float currentHealth;
 
     public event Action<float> OnHealthChanged; // 生命值变化事件
     public event Action OnDeath; // 死亡事件

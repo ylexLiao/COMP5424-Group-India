@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HorseController : MonoBehaviour
+public class ShipController : MonoBehaviour
 {
     public Transform[] waypoints; // 路线目标点数组
     public float moveSpeed = 5f; // 初始移动速度
