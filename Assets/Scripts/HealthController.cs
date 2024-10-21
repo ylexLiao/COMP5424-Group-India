@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class HealthController : MonoBehaviour
 {
     public float maxHealth = 100f; // 最大生命值
     public float currentHealth; // 当前生命值
+    public Text healthText;
 
     private Animator animator; // 动画控制器
 
@@ -15,6 +17,8 @@ public class HealthController : MonoBehaviour
     {
         currentHealth = maxHealth; // 初始化生命值
         animator = GetComponent<Animator>(); // 获取动画组件
+        UpdateHealthText();
+
     }
 
     // Update is called once per frame
@@ -27,6 +31,8 @@ public class HealthController : MonoBehaviour
     public void TakeDamage(float damage)
     {
         currentHealth -= damage; // 减少当前生命值
+        UpdateHealthText();
+
 
         // 触发受击动画或效果
         // animator.SetTrigger("TakeDamage");
@@ -35,6 +41,14 @@ public class HealthController : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die(); // 执行死亡逻辑
+        }
+    }
+
+    private void UpdateHealthText()
+    {
+        if (healthText != null)
+        {
+            healthText.text = "Health: " + currentHealth.ToString(); // 更新显示的生命值
         }
     }
 
