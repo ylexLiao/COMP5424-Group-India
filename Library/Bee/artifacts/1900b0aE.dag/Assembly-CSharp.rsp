@@ -580,7 +580,6 @@
 "Assets/Scripts/EnemyHealth.cs"
 "Assets/Scripts/EnermyController.cs"
 "Assets/Scripts/FloorScript.cs"
-"Assets/Scripts/HealthController (2).cs"
 "Assets/Scripts/HealthController.cs"
 "Assets/Scripts/HorseController.cs"
 "Assets/Scripts/MosterWeapons/MonsterController.cs"
