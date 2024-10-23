@@ -583,6 +583,8 @@
 "Assets/Scripts/HealthController (2).cs"
 "Assets/Scripts/HealthController.cs"
 "Assets/Scripts/HorseController.cs"
+"Assets/Scripts/MosterWeapons/MonsterController.cs"
+"Assets/Scripts/MosterWeapons/MonsterWeaponController.cs"
 "Assets/Scripts/ShipController.cs"
 "Assets/Scripts/Weapons/Axe.cs"
 "Assets/Scripts/Weapons/Bullet.cs"
