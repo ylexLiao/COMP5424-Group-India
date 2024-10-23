@@ -21,70 +21,39 @@ public class WeaponManager : MonoBehaviour
     {
         // 初始化武器，默认挂载第一把武器
         InitializeWeapons();
-        Debug.Log("Connected Controller: " + OVRInput.GetConnectedControllers().ToString());
     }
 
-    /* void Update()
-     {
-         // 切换左手武器
-         if (OVRInput.GetDown(OVRInput.Button.One))  // A 按钮 (右手)
-         {
-             if (!isUsingTwoHandWeapon)
-             {
-                 StartCoroutine(SwitchLeftHandWeapon());
-             }
-         }
-
-         // 切换右手武器
-         if (OVRInput.GetDown(OVRInput.Button.Two))  // B 按钮 (右手)
-         {
-             if (!isUsingTwoHandWeapon)
-             {
-                 StartCoroutine(SwitchRightHandWeapon());
-             }
-         }
-
-         // 切换双手武器
-         if (OVRInput.GetDown(OVRInput.Button.Three))  // X 按钮 (左手)
-         {
-             StartCoroutine(SwitchToTwoHandWeapon());
-         }
-     }*/
-
-/*    void Update()
-    {
-        // 测试 A 按钮输入
-        if (OVRInput.GetDown(OVRInput.Button.One))  // A 按钮 (右手)
+    /*    void Update()
         {
-            Debug.Log("A 按钮被按下！");
-            if (!isUsingTwoHandWeapon)
+            // 切换左手武器
+            if (OVRInput.GetDown(OVRInput.Button.One))  // A 按钮 ( 右手 )
             {
-                StartCoroutine(SwitchLeftHandWeapon());
+                if (!isUsingTwoHandWeapon)
+                {
+                    StartCoroutine(SwitchLeftHandWeapon());
+                }
             }
-        }
 
-        // 测试 B 按钮输入
-        if (OVRInput.GetDown(OVRInput.Button.Two))  // B 按钮 (右手)
-        {
-            Debug.Log("B 按钮被按下！");
-            if (!isUsingTwoHandWeapon)
+            // 切换右手武器
+            if (OVRInput.GetDown(OVRInput.Button.Two))  // B 按钮 ( 右手 )
             {
-                StartCoroutine(SwitchRightHandWeapon());
+                if (!isUsingTwoHandWeapon)
+                {
+                    StartCoroutine(SwitchRightHandWeapon());
+                }
             }
-        }
 
-        // 测试 X 按钮输入
-        if (OVRInput.GetDown(OVRInput.Button.Three))  // X 按钮 (左手)
-        {
-            Debug.Log("X 按钮被按下！");
-            StartCoroutine(SwitchToTwoHandWeapon());
-        }
-    }*/
+            // 切换双手武器
+            if (OVRInput.GetDown(OVRInput.Button.Three))  // X 按钮 ( 左手 )
+            {
+                StartCoroutine(SwitchToTwoHandWeapon());
+            }
+        }*/
 
     void Update()
     {
-        // 测试键盘输入
-        if (Input.GetKeyDown(KeyCode.Alpha1)) // 使用键盘上的 1 键
+        // 使用其他键盘按键进行测试
+        if (Input.GetKeyDown(KeyCode.Alpha1))  // 使用键盘上的 1 键（不是小键盘）
         {
             Debug.Log("键盘按下了数字键 1（切换左手武器）");
             if (!isUsingTwoHandWeapon)
@@ -93,22 +62,21 @@ public class WeaponManager : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha2)) // 使用键盘上的 2 键
+        if (Input.GetKeyDown(KeyCode.Q))  // 使用字母键 Q 进行测试
         {
-            Debug.Log("键盘按下了数字键 2（切换右手武器）");
+            Debug.Log("键盘按下了 Q 键（切换右手武器）");
             if (!isUsingTwoHandWeapon)
             {
                 StartCoroutine(SwitchRightHandWeapon());
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Alpha3)) // 使用键盘上的 3 键
+        if (Input.GetKeyDown(KeyCode.E))  // 使用字母键 E 进行测试
         {
-            Debug.Log("键盘按下了数字键 3（切换双手武器）");
+            Debug.Log("键盘按下了 E 键（切换双手武器）");
             StartCoroutine(SwitchToTwoHandWeapon());
         }
     }
-
 
 
     void InitializeWeapons()
@@ -145,60 +113,69 @@ public class WeaponManager : MonoBehaviour
     {
         if (isUsingTwoHandWeapon) yield break;
 
-        // 销毁当前左手武器
+        // 卸载当前左手武器
         if (leftHandMount.childCount > 0)
         {
             Destroy(leftHandMount.GetChild(0).gameObject);
         }
 
-        yield return new WaitForEndOfFrame(); // 等待一帧，确保旧武器完全销毁
-
-        // 切换到下一个左手武器
+        // 更新当前左手武器的索引，确保在数组长度内循环
         currentLeftWeaponIndex = (currentLeftWeaponIndex + 1) % leftHandWeapons.Length;
         AttachWeaponToLeftHand(leftHandWeapons[currentLeftWeaponIndex]);
+        yield return null;
     }
 
     IEnumerator SwitchRightHandWeapon()
     {
         if (isUsingTwoHandWeapon) yield break;
 
-        // 销毁当前右手武器
+        // 卸载当前右手武器
         if (rightHandMount.childCount > 0)
         {
             Destroy(rightHandMount.GetChild(0).gameObject);
         }
 
-        yield return new WaitForEndOfFrame(); // 等待一帧，确保旧武器完全销毁
-
-        // 切换到下一个右手武器
+        // 更新当前右手武器的索引，确保在数组长度内循环
         currentRightWeaponIndex = (currentRightWeaponIndex + 1) % rightHandWeapons.Length;
         AttachWeaponToRightHand(rightHandWeapons[currentRightWeaponIndex]);
+        yield return null;
     }
 
     IEnumerator SwitchToTwoHandWeapon()
     {
-        // 卸载所有现有武器
-        if (leftHandMount.childCount > 0)
+        // 如果已经使用双手武器，则切回单手武器
+        if (isUsingTwoHandWeapon)
         {
-            Destroy(leftHandMount.GetChild(0).gameObject);
+            isUsingTwoHandWeapon = false;
+
+            // 卸载当前双手武器
+            if (twoHandMount.childCount > 0)
+            {
+                Destroy(twoHandMount.GetChild(0).gameObject);
+            }
+
+            // 重新激活左手和右手武器
+            AttachWeaponToLeftHand(leftHandWeapons[currentLeftWeaponIndex]);
+            AttachWeaponToRightHand(rightHandWeapons[currentRightWeaponIndex]);
         }
-        if (rightHandMount.childCount > 0)
+        else
         {
-            Destroy(rightHandMount.GetChild(0).gameObject);
+            // 卸载左右手武器
+            if (leftHandMount.childCount > 0)
+            {
+                Destroy(leftHandMount.GetChild(0).gameObject);
+            }
+            if (rightHandMount.childCount > 0)
+            {
+                Destroy(rightHandMount.GetChild(0).gameObject);
+            }
+
+            // 切换到双手武器
+            isUsingTwoHandWeapon = true;
+            currentTwoHandWeaponIndex = (currentTwoHandWeaponIndex + 1) % twoHandWeapons.Length;
+            AttachWeaponToTwoHand(twoHandWeapons[currentTwoHandWeaponIndex]);
         }
-
-        // 卸载双手挂载点上的武器
-        if (twoHandMount.childCount > 0)
-        {
-            Destroy(twoHandMount.GetChild(0).gameObject);
-        }
-
-        yield return new WaitForEndOfFrame(); // 等待一帧，确保旧武器完全销毁
-
-        // 激活双手武器
-        isUsingTwoHandWeapon = true;
-        currentTwoHandWeaponIndex = (currentTwoHandWeaponIndex + 1) % twoHandWeapons.Length;
-        AttachWeaponToTwoHand(twoHandWeapons[currentTwoHandWeaponIndex]);
+        yield return null;
     }
 
     void AttachWeaponToLeftHand(GameObject weapon)
