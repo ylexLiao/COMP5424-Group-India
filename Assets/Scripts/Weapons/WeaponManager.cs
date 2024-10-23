@@ -109,6 +109,7 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+
     IEnumerator SwitchLeftHandWeapon()
     {
         if (isUsingTwoHandWeapon) yield break;
@@ -177,6 +178,42 @@ public class WeaponManager : MonoBehaviour
         }
         yield return null;
     }
+    /*
+        void AttachWeaponToLeftHand(GameObject weapon)
+        {
+            if (weapon != null)
+            {
+                GameObject newWeapon = Instantiate(weapon, leftHandMount);
+                newWeapon.transform.localPosition = Vector3.zero;
+                newWeapon.transform.localRotation = Quaternion.identity;
+                newWeapon.SetActive(true);
+                Debug.Log("LeftHandWeapon attached: " + newWeapon.name);
+            }
+        }
+
+        void AttachWeaponToRightHand(GameObject weapon)
+        {
+            if (weapon != null)
+            {
+                GameObject newWeapon = Instantiate(weapon, rightHandMount);
+                newWeapon.transform.localPosition = Vector3.zero;
+                newWeapon.transform.localRotation = Quaternion.identity;
+                newWeapon.SetActive(true);
+                Debug.Log("RightHandWeapon attached: " + newWeapon.name);
+            }
+        }
+
+        void AttachWeaponToTwoHand(GameObject weapon)
+        {
+            if (weapon != null)
+            {
+                GameObject newWeapon = Instantiate(weapon, twoHandMount);
+                newWeapon.transform.localPosition = Vector3.zero;
+                newWeapon.transform.localRotation = Quaternion.identity;
+                newWeapon.SetActive(true);
+                Debug.Log("TwoHandWeapon attached: " + newWeapon.name);
+            }
+        }*/
 
     void AttachWeaponToLeftHand(GameObject weapon)
     {
@@ -185,6 +222,7 @@ public class WeaponManager : MonoBehaviour
             GameObject newWeapon = Instantiate(weapon, leftHandMount);
             newWeapon.transform.localPosition = Vector3.zero;
             newWeapon.transform.localRotation = Quaternion.identity;
+            newWeapon.transform.SetParent(leftHandMount);  // 确保将武器设置为挂载点的子对象
             newWeapon.SetActive(true);
             Debug.Log("LeftHandWeapon attached: " + newWeapon.name);
         }
@@ -197,6 +235,7 @@ public class WeaponManager : MonoBehaviour
             GameObject newWeapon = Instantiate(weapon, rightHandMount);
             newWeapon.transform.localPosition = Vector3.zero;
             newWeapon.transform.localRotation = Quaternion.identity;
+            newWeapon.transform.SetParent(rightHandMount);  // 确保将武器设置为挂载点的子对象
             newWeapon.SetActive(true);
             Debug.Log("RightHandWeapon attached: " + newWeapon.name);
         }
@@ -209,8 +248,10 @@ public class WeaponManager : MonoBehaviour
             GameObject newWeapon = Instantiate(weapon, twoHandMount);
             newWeapon.transform.localPosition = Vector3.zero;
             newWeapon.transform.localRotation = Quaternion.identity;
+            newWeapon.transform.SetParent(twoHandMount);  // 确保将武器设置为挂载点的子对象
             newWeapon.SetActive(true);
             Debug.Log("TwoHandWeapon attached: " + newWeapon.name);
         }
     }
+
 }

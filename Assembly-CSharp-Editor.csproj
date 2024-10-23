@@ -66,6 +66,7 @@
     <Compile Include="Assets\Oculus\SampleFramework\Usage\OVROverlayCanvas\Editor\OVROverlayCanvasEditor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\OculusSampleFrameworkUtil.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Firebase\Editor\FirebaseEnabler.cs" />
+    <Compile Include="Assets\myres\Starter Assets\TutorialInfo\Scripts\Editor\ReadmeEditor.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Editor\BuildAssetPackages.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Gradle\Editor\Utils.cs" />
     <Compile Include="Assets\Oculus\SampleFramework\Core\Video\Editor\AndroidVideoEditorUtil.cs" />
@@ -1244,6 +1245,10 @@
     <ProjectReference Include="Meta.WitAi.TTS.csproj">
       <Project>{1F5A2906-2F2C-5DC8-AF99-7A1ADA97E144}</Project>
       <Name>Meta.WitAi.TTS</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.StarterAssets.csproj">
+      <Project>{06C7E188-CDF7-DB84-2E91-FEEF2CC5538F}</Project>
+      <Name>Unity.StarterAssets</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Samples.TTSVoices.csproj">
       <Project>{6D0A039C-99CE-0F17-9527-E63773C7B47F}</Project>
