@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\UnityProject\\COMP5424-Group-India\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|D:\\UnityProject\\COMP5424-Group-India\\assets\\scripts\\shipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shipcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|D:\\UnityProject\\COMP5424-Group-India\\assets\\scripts\\mosterweapons\\monsterweaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mosterweapons\\monsterweaponcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|D:\\UnityProject\\COMP5424-Group-India\\assets\\scripts\\enemy\\enemynavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemynavigation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|d:\\unityproject\\comp5424-group-india\\assets\\scripts\\enemy\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|d:\\unityproject\\comp5424-group-india\\assets\\scripts\\enemy\\enemyspawntrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemyspawntrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|D:\\UnityProject\\COMP5424-Group-India\\assets\\scripts\\weapons\\weaponmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\weaponmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|D:\\UnityProject\\COMP5424-Group-India\\assets\\scripts\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\healthcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|D:\\UnityProject\\COMP5424-Group-India\\assets\\scripts\\mosterweapons\\monstercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mosterweapons\\monstercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|D:\\UnityProject\\COMP5424-Group-India\\assets\\scripts\\weapons\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99366B3C-E077-59FD-C439-29E571D8C710}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\weapons\\gun.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyController.cs",
+              "DocumentMoniker": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\Enemy\\EnemyController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyController.cs",
+              "ToolTip": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\Enemy\\EnemyController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T23:19:45.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ShipController.cs",
+              "DocumentMoniker": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\ShipController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ShipController.cs",
+              "ToolTip": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\ShipController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ShipController.cs",
+              "ViewState": "AgIAAEEAAAAAAAAAAAAQwGIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T20:01:24.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HealthController.cs",
+              "DocumentMoniker": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\HealthController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HealthController.cs",
+              "ToolTip": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\HealthController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HealthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T10:58:26.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MonsterWeaponController.cs",
+              "DocumentMoniker": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\MosterWeapons\\MonsterWeaponController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MosterWeapons\\MonsterWeaponController.cs",
+              "ToolTip": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\MosterWeapons\\MonsterWeaponController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MosterWeapons\\MonsterWeaponController.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAAADcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T16:34:00.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EnemyNavigation.cs",
+              "DocumentMoniker": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\Enemy\\EnemyNavigation.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemyNavigation.cs",
+              "ToolTip": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\Enemy\\EnemyNavigation.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemyNavigation.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAvwCAAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T14:13:17.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnemySpawnTrigger.cs",
+              "DocumentMoniker": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\Enemy\\EnemySpawnTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\EnemySpawnTrigger.cs",
+              "ToolTip": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\Enemy\\EnemySpawnTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\EnemySpawnTrigger.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwDAAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T13:14:21.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeaponManager.cs",
+              "DocumentMoniker": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\Weapons\\WeaponManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\WeaponManager.cs",
+              "ToolTip": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\Weapons\\WeaponManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\WeaponManager.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAtwCUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T16:43:55.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Gun.cs",
+              "DocumentMoniker": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\Weapons\\Gun.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Weapons\\Gun.cs",
+              "ToolTip": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\Weapons\\Gun.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Weapons\\Gun.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T08:40:11.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MonsterController.cs",
+              "DocumentMoniker": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\MosterWeapons\\MonsterController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\MosterWeapons\\MonsterController.cs",
+              "ToolTip": "D:\\UnityProject\\COMP5424-Group-India\\Assets\\Scripts\\MosterWeapons\\MonsterController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\MosterWeapons\\MonsterController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAwAgAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T16:34:03.766Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

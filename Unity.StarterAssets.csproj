@@ -10,7 +10,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
     <ProjectGuid>{06C7E188-CDF7-DB84-2E91-FEEF2CC5538F}</ProjectGuid>
+=======
+    <ProjectGuid>{35316471-0127-69B0-C0FC-6D1F5236D9D4}</ProjectGuid>
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.StarterAssets</AssemblyName>
