@@ -1,5 +1,9 @@
 using UnityEngine;
 using Valve.VR;
+<<<<<<< HEAD
+=======
+using YourProjectNamespace;
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
 
 public class MonsterController : MonoBehaviour
 {
@@ -13,8 +17,13 @@ public class MonsterController : MonoBehaviour
         // 实例化武器
         weapon = Instantiate(weaponPrefab, transform.position, Quaternion.identity);
 
+<<<<<<< HEAD
         // 获取小怪的右手位置（假设小怪有一个名为 "RightHand" 的子物体表示右手）
         Transform rightHand = transform.Find("RightHand");
+=======
+        // 获取小怪的右手位置（假设小怪有一个名为 "Hand_R" 的子物体表示右手）
+        Transform rightHand = transform.Find("Hand_R");
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
         if (rightHand != null)
         {
             // 获取 SteamVR 相机的位置和旋转

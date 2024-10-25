@@ -4,31 +4,29 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public int damage = 10;  // 子弹的伤害
+    public int damage = 10; // 子弹伤害值
 
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
-        // 5秒后自动销毁子弹，防止子弹飞行过远或丢失未销毁
-        Destroy(gameObject, 5f);
-    }
+        Debug.Log("检测到碰撞，碰撞对象：" + other.name);
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Enemy")
+        if (other.CompareTag("Enemy"))
         {
-            EnemyHealth enemyHealth = collision.gameObject.GetComponent<EnemyHealth>();
-            if (enemyHealth != null)
+            Debug.Log("子弹成功击中了敌人：" + other.name);
+
+            HealthController health = other.GetComponent<HealthController>();
+            if (health != null)
             {
-                enemyHealth.TakeDamage(damage);  // 对敌人造成伤害
-                Debug.Log("Enemy hit! Dealt " + damage + " damage.");
+                Debug.Log("子弹对敌人造成的伤害值：" + damage);
+                health.TakeDamage(damage);
             }
             else
             {
-                Debug.LogError("Enemy does not have EnemyHealth component!");
+                Debug.LogWarning("击中的敌人没有 HealthController 组件！");
             }
-        }
 
-        // 击中任何物体后销毁子弹
-        Destroy(gameObject);
+            Destroy(gameObject); // 销毁子弹
+        }
     }
+
 }

@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A198A38D-EE8D-55D1-8B61-2B7E64B15382}</ProjectGuid>
+    <ProjectGuid>{AB26F99C-2AF0-203E-83BA-2D40541CDB0A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Meta.XR.BuildingBlocks</AssemblyName>
@@ -947,7 +947,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Oculus.VR.csproj">
-      <Project>{24E36D64-B75B-DC55-2F8B-465C18BB46F4}</Project>
+      <Project>{BCDAB0A4-5BD6-8EF4-541C-ACBB8164C995}</Project>
       <Name>Oculus.VR</Name>
     </ProjectReference>
   </ItemGroup>

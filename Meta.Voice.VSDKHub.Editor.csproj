@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>Meta.Voice.VSDKHub</RootNamespace>
-    <ProjectGuid>{F5C330BE-1B54-23F3-9D50-F50AA02BD773}</ProjectGuid>
+    <ProjectGuid>{DE901A0C-3632-D1FC-DF68-5A740BB9FCD6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Meta.Voice.VSDKHub.Editor</AssemblyName>
@@ -973,15 +973,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Meta.Voice.Hub.Editor.csproj">
-      <Project>{B74DD572-C3F3-E5FC-9331-A9E8822F4385}</Project>
+      <Project>{6D2C6906-0FA4-A217-986B-6F63DB6F3F25}</Project>
       <Name>Meta.Voice.Hub.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Hub.Runtime.csproj">
-      <Project>{10E6F882-4DF8-F821-65A6-6A0B11A8FE6E}</Project>
+      <Project>{946D69AF-C188-AC1F-AAE9-26D4E72C89C4}</Project>
       <Name>Meta.Voice.Hub.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Telemetry.csproj">
-      <Project>{3EC9816B-531C-40B8-823F-31961B832726}</Project>
+      <Project>{02E72B03-FE7F-082A-541A-7530C93267F8}</Project>
       <Name>VoiceSDK.Telemetry</Name>
     </ProjectReference>
   </ItemGroup>

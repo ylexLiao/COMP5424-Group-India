@@ -40,7 +40,11 @@ public class ShipController : MonoBehaviour
         {
             MoveAlongPath(); // 按照路线前进
         }
+<<<<<<< HEAD
 
+=======
+        Debug.Log(blockingEnemies.Count);
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
 
     }
     // 按照固定路线移动的函数
@@ -100,6 +104,7 @@ public class ShipController : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
     public void TakeDamage(float damage)
     {
         healthController.TakeDamage(damage); // 调用生命值系统的扣血方法
@@ -108,6 +113,12 @@ public class ShipController : MonoBehaviour
     private void UpdateHealthUI(float currentHealth)
     {
         Debug.Log($"马当前生命值：{currentHealth}");
+=======
+
+    private void UpdateHealthUI(float currentHealth)
+    {
+
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
     }
 
     private void OnHorseDeath()

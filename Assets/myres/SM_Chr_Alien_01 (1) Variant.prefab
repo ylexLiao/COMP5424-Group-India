@@ -62,6 +62,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4529035404035704, guid: e91fc491052840f48a62c61a286ccf07, type: 3}
       insertIndex: 0
       addedObject: {fileID: 9069459312249091759}
+<<<<<<< HEAD
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1710209854320498, guid: e91fc491052840f48a62c61a286ccf07, type: 3}
       insertIndex: -1
@@ -94,6 +95,10 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
+=======
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e91fc491052840f48a62c61a286ccf07, type: 3}
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
 --- !u!4 &2385077459037070415 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4529035404035704, guid: e91fc491052840f48a62c61a286ccf07, type: 3}

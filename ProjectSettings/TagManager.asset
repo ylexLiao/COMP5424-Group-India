@@ -4,16 +4,24 @@
 TagManager:
   serializedVersion: 2
   tags:
+<<<<<<< HEAD
   - LeftHandWeapon
   - RightHandWeapon
+=======
+  - Ball
+  - Enemy
+  - Ship
+  - Sword
+  - Gun
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - EnemyToShip
   - Water
   - UI
-  - 
+  - PlayerToEnemy
   - 
   - 
   - 

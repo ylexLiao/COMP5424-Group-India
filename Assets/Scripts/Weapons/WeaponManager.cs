@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+<<<<<<< HEAD
+=======
+using Valve.VR;
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
 
 public class WeaponManager : MonoBehaviour
 {
@@ -10,6 +14,13 @@ public class WeaponManager : MonoBehaviour
     [SerializeField] private Transform leftHandMount;        // 左手挂载点
     [SerializeField] private Transform rightHandMount;       // 右手挂载点
     [SerializeField] private Transform twoHandMount;         // 双手武器挂载点
+<<<<<<< HEAD
+=======
+    [SerializeField] private Vector3 LrotationOffset;  // 旋转偏移 (以欧拉角度表示)
+
+    public SteamVR_Action_Boolean triggerAction; 
+    public SteamVR_Input_Sources handType; 
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
 
     private int currentLeftWeaponIndex = 0;   // 当前左手武器的索引
     private int currentRightWeaponIndex = 0;  // 当前右手武器的索引
@@ -23,6 +34,7 @@ public class WeaponManager : MonoBehaviour
         InitializeWeapons();
     }
 
+<<<<<<< HEAD
     /*    void Update()
         {
             // 切换左手武器
@@ -52,6 +64,19 @@ public class WeaponManager : MonoBehaviour
 
     void Update()
     {
+=======
+    void Update()
+    {
+        if (triggerAction.GetStateDown(handType))
+        {
+            StartCoroutine(SwitchLeftHandWeapon());
+            StartCoroutine(SwitchRightHandWeapon());
+        }
+    }
+
+    /*void Update()
+    {
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
         // 使用其他键盘按键进行测试
         if (Input.GetKeyDown(KeyCode.Alpha1))  // 使用键盘上的 1 键（不是小键盘）
         {
@@ -76,7 +101,11 @@ public class WeaponManager : MonoBehaviour
             Debug.Log("键盘按下了 E 键（切换双手武器）");
             StartCoroutine(SwitchToTwoHandWeapon());
         }
+<<<<<<< HEAD
     }
+=======
+    }*/
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
 
 
     void InitializeWeapons()
@@ -109,7 +138,10 @@ public class WeaponManager : MonoBehaviour
         }
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
     IEnumerator SwitchLeftHandWeapon()
     {
         if (isUsingTwoHandWeapon) yield break;
@@ -178,6 +210,7 @@ public class WeaponManager : MonoBehaviour
         }
         yield return null;
     }
+<<<<<<< HEAD
     /*
         void AttachWeaponToLeftHand(GameObject weapon)
         {
@@ -223,6 +256,26 @@ public class WeaponManager : MonoBehaviour
             newWeapon.transform.localPosition = Vector3.zero;
             newWeapon.transform.localRotation = Quaternion.identity;
             newWeapon.transform.SetParent(leftHandMount);  // 确保将武器设置为挂载点的子对象
+=======
+
+    void AttachWeaponToLeftHand(GameObject weapon)
+    {
+        Vector3 rotationOffset = new Vector3(70, 0, 180);
+        Vector3 positionOffset = new Vector3(0, 0,-0.1f );  // (X, Y, Z)
+        if (weapon != null)
+        {
+            GameObject newWeapon = Instantiate(weapon, leftHandMount);
+
+            // 对齐位置
+            newWeapon.transform.position = leftHandMount.position;
+
+            // 对齐位置并添加偏移
+            newWeapon.transform.position = leftHandMount.position + leftHandMount.rotation * positionOffset;
+
+            // 先对齐手柄旋转，再叠加旋转偏移
+            newWeapon.transform.rotation = leftHandMount.rotation * Quaternion.Euler(rotationOffset);
+
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
             newWeapon.SetActive(true);
             Debug.Log("LeftHandWeapon attached: " + newWeapon.name);
         }
@@ -230,12 +283,40 @@ public class WeaponManager : MonoBehaviour
 
     void AttachWeaponToRightHand(GameObject weapon)
     {
+<<<<<<< HEAD
         if (weapon != null)
         {
             GameObject newWeapon = Instantiate(weapon, rightHandMount);
             newWeapon.transform.localPosition = Vector3.zero;
             newWeapon.transform.localRotation = Quaternion.identity;
             newWeapon.transform.SetParent(rightHandMount);  // 确保将武器设置为挂载点的子对象
+=======
+        Vector3 rotationOffset = new Vector3(70, 0, 0);
+        Vector3 positionOffset = new Vector3(0, 0, -0.05f);
+        if (weapon != null)
+        {
+            GameObject newWeapon = Instantiate(weapon, rightHandMount);
+
+            if (newWeapon.CompareTag("Gun"))
+            {
+                // 对齐位置并添加偏移
+                newWeapon.transform.position = rightHandMount.position + rightHandMount.rotation * positionOffset;
+
+                // 对齐旋转并添加旋转偏移
+                newWeapon.transform.rotation = rightHandMount.rotation * Quaternion.Euler(new Vector3(70, 0, 0));
+            }
+
+            if (newWeapon.CompareTag("Sword"))
+            {
+                // 对齐位置并添加偏移
+                newWeapon.transform.position = rightHandMount.position + rightHandMount.rotation * positionOffset;
+
+                // 对齐旋转并添加旋转偏移
+                newWeapon.transform.rotation = rightHandMount.rotation * Quaternion.Euler(new Vector3(0, 90, 70));
+            }
+
+
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
             newWeapon.SetActive(true);
             Debug.Log("RightHandWeapon attached: " + newWeapon.name);
         }
@@ -248,10 +329,16 @@ public class WeaponManager : MonoBehaviour
             GameObject newWeapon = Instantiate(weapon, twoHandMount);
             newWeapon.transform.localPosition = Vector3.zero;
             newWeapon.transform.localRotation = Quaternion.identity;
+<<<<<<< HEAD
             newWeapon.transform.SetParent(twoHandMount);  // 确保将武器设置为挂载点的子对象
+=======
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
             newWeapon.SetActive(true);
             Debug.Log("TwoHandWeapon attached: " + newWeapon.name);
         }
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 6a5cf8ae133fe4fdaa4e3fc831df2e410538351a
 }

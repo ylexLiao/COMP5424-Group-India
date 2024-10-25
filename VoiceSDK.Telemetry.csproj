@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3EC9816B-531C-40B8-823F-31961B832726}</ProjectGuid>
+    <ProjectGuid>{02E72B03-FE7F-082A-541A-7530C93267F8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>VoiceSDK.Telemetry</AssemblyName>
@@ -976,11 +976,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="AssistantCoreSDKEditor.csproj">
-      <Project>{37C89335-47A7-3E18-505D-304B847C0196}</Project>
+      <Project>{707C165F-8AA1-02DC-72F2-51721A8BAFE9}</Project>
       <Name>AssistantCoreSDKEditor</Name>
     </ProjectReference>
     <ProjectReference Include="AssistantCoreSDKRuntime.csproj">
-      <Project>{E73CDF07-9342-E212-7141-8290D67B30C9}</Project>
+      <Project>{8F78BF88-20A5-348B-5561-FF29769ED004}</Project>
       <Name>AssistantCoreSDKRuntime</Name>
     </ProjectReference>
   </ItemGroup>
