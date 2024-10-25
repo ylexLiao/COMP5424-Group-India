@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{A5DDF210-E8D5-9DFA-4134-3A55CDC4242D}</ProjectGuid>
+    <ProjectGuid>{C8528791-D163-FA0B-9BC1-F2FC42F23BD6}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Facebook.Wit.Dictation.Editor</AssemblyName>
@@ -972,11 +972,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Facebook.Wit.Dictation.csproj">
-      <Project>{D5979831-A8B6-4544-6AF4-5ECD53B6B50C}</Project>
+      <Project>{92577B64-65D2-48A4-8DA7-3CDD0DFA7007}</Project>
       <Name>Facebook.Wit.Dictation</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.Editor.csproj">
-      <Project>{B6BB0261-CFC6-2B66-41A5-629105EDD781}</Project>
+      <Project>{1467D84B-2DDC-6FFE-BEDE-8A816F8EBF7F}</Project>
       <Name>Meta.WitAi.Editor</Name>
     </ProjectReference>
   </ItemGroup>

@@ -30,10 +30,15 @@ public class HealthController : MonoBehaviour
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth); // 限制生命值范围
         OnHealthChanged?.Invoke(currentHealth); // 触发生命值变化事件
+        Debug.Log("敌人受到伤害，当前血量: " + currentHealth);
+        /*        if (currentHealth <= 0)
+                {
+                    OnDeath?.Invoke(); // 触发死亡事件
+                }*/
 
         if (currentHealth <= 0)
         {
-            OnDeath?.Invoke(); // 触发死亡事件
+            Die(); // 调用死亡方法
         }
     }
 
@@ -49,5 +54,16 @@ public class HealthController : MonoBehaviour
     public float GetCurrentHealth()
     {
         return currentHealth;
+    }
+
+    private void Die()
+    {
+        Debug.Log("敌人已死亡：" + gameObject.name);
+
+        // 可以在这里触发 OnDeath 事件，如果需要
+        OnDeath?.Invoke();
+
+        // 销毁敌人
+        Destroy(gameObject);
     }
 }

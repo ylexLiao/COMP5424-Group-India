@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meta.Voice.Samples.BuiltInT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meta.XR.BuildingBlocks.Editor", "Meta.XR.BuildingBlocks.Editor.csproj", "{9E658C9D-0D50-74AD-0DB6-0B35DBE4E3A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.StarterAssets", "Unity.StarterAssets.csproj", "{06C7E188-CDF7-DB84-2E91-FEEF2CC5538F}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Meta.Voice.VSDKHub.Editor", "Meta.Voice.VSDKHub.Editor.csproj", "{F5C330BE-1B54-23F3-9D50-F50AA02BD773}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoiceSDK.Dictation.Runtime", "VoiceSDK.Dictation.Runtime.csproj", "{F7CF5CB5-6AC0-65E5-CAC9-DE7E3DE70C7F}"
@@ -217,6 +219,10 @@ Global
 		{9E658C9D-0D50-74AD-0DB6-0B35DBE4E3A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9E658C9D-0D50-74AD-0DB6-0B35DBE4E3A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9E658C9D-0D50-74AD-0DB6-0B35DBE4E3A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C7E188-CDF7-DB84-2E91-FEEF2CC5538F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C7E188-CDF7-DB84-2E91-FEEF2CC5538F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C7E188-CDF7-DB84-2E91-FEEF2CC5538F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C7E188-CDF7-DB84-2E91-FEEF2CC5538F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{F5C330BE-1B54-23F3-9D50-F50AA02BD773}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F5C330BE-1B54-23F3-9D50-F50AA02BD773}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5C330BE-1B54-23F3-9D50-F50AA02BD773}.Release|Any CPU.ActiveCfg = Release|Any CPU

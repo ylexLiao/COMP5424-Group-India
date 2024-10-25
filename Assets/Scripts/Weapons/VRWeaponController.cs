@@ -6,20 +6,35 @@ using Valve.VR;
 
 public class VRWeaponController : MonoBehaviour
 {
-    public Gun gun;  // 引用枪支
+    public SteamVR_Action_Boolean triggerAction; // 绑定右手扳机的输入动作
+    public SteamVR_Input_Sources handType; // 选择右手
+    public Gun gun; // 绑定的 Gun 脚本
 
-    public SteamVR_Action_Boolean triggerAction = SteamVR_Input.GetAction<SteamVR_Action_Boolean>("GrabPinch");
+    // Start is called before the first frame update
+    void Start()
+    {
 
+    }
+
+    // Update is called once per frame
     void Update()
     {
-        // 检测手柄触发器输入
-        if (triggerAction.GetStateDown(SteamVR_Input_Sources.RightHand))
+        // 检查右手扳机是否被按下
+        if (triggerAction.GetStateDown(handType))
         {
-            if (gun != null)
-            {
-                gun.Shoot();  // 调用枪支的发射方法
-                Debug.Log("Trigger pressed, Shoot() called.");
-            }
+            Shoot();
+        }
+    }
+
+    private void Shoot()
+    {
+        if (gun != null)
+        {
+            gun.Shoot(); // 调用 Gun 脚本中的 Shoot 方法
+        }
+        else
+        {
+            Debug.LogError("Gun 脚本未绑定！");
         }
     }
 }

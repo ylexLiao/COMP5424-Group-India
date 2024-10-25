@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{E73CDF07-9342-E212-7141-8290D67B30C9}</ProjectGuid>
+    <ProjectGuid>{8F78BF88-20A5-348B-5561-FF29769ED004}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>AssistantCoreSDKRuntime</AssemblyName>

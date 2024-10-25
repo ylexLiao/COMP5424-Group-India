@@ -10,7 +10,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{98A58482-465A-B51D-68ED-77F251CF8359}</ProjectGuid>
+    <ProjectGuid>{55AF2953-E1C1-C641-9FCE-232E4933D3B0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>VoiceSDK.Editor</AssemblyName>
@@ -985,43 +985,43 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VoiceSDK.Runtime.csproj">
-      <Project>{1DBD03C6-F30D-665B-CD03-6DEC48F1A073}</Project>
+      <Project>{AEC52A09-3087-5273-CBA2-F5B32CBB4434}</Project>
       <Name>VoiceSDK.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.csproj">
-      <Project>{A60B98AD-17FD-DAD9-F54A-3FF4DF5485F7}</Project>
+      <Project>{4CA5C8B0-4404-18BD-CA63-22782A5D8792}</Project>
       <Name>Meta.WitAi</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.Editor.csproj">
-      <Project>{B6BB0261-CFC6-2B66-41A5-629105EDD781}</Project>
+      <Project>{1467D84B-2DDC-6FFE-BEDE-8A816F8EBF7F}</Project>
       <Name>Meta.WitAi.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.TTS.csproj">
-      <Project>{1F5A2906-2F2C-5DC8-AF99-7A1ADA97E144}</Project>
+      <Project>{24CFC901-991F-7C38-28B3-FACD1B207A19}</Project>
       <Name>Meta.WitAi.TTS</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.TTS.Editor.csproj">
-      <Project>{67500D9A-2E46-65F7-7DBE-D3CAB580D8B1}</Project>
+      <Project>{315C6B0B-9988-20D4-2C21-6AA319AEEFB2}</Project>
       <Name>Meta.WitAi.TTS.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.WitAi.Lib.csproj">
-      <Project>{D568ADB3-D392-7908-0E41-CBB0D756D2B8}</Project>
+      <Project>{9B8FBE3C-3205-A684-0D76-986C2A5CB13C}</Project>
       <Name>Meta.WitAi.Lib</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Hub.Runtime.csproj">
-      <Project>{10E6F882-4DF8-F821-65A6-6A0B11A8FE6E}</Project>
+      <Project>{946D69AF-C188-AC1F-AAE9-26D4E72C89C4}</Project>
       <Name>Meta.Voice.Hub.Runtime</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.VSDKHub.Editor.csproj">
-      <Project>{F5C330BE-1B54-23F3-9D50-F50AA02BD773}</Project>
+      <Project>{DE901A0C-3632-D1FC-DF68-5A740BB9FCD6}</Project>
       <Name>Meta.Voice.VSDKHub.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Meta.Voice.Hub.Editor.csproj">
-      <Project>{B74DD572-C3F3-E5FC-9331-A9E8822F4385}</Project>
+      <Project>{6D2C6906-0FA4-A217-986B-6F63DB6F3F25}</Project>
       <Name>Meta.Voice.Hub.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="VoiceSDK.Telemetry.csproj">
-      <Project>{3EC9816B-531C-40B8-823F-31961B832726}</Project>
+      <Project>{02E72B03-FE7F-082A-541A-7530C93267F8}</Project>
       <Name>VoiceSDK.Telemetry</Name>
     </ProjectReference>
   </ItemGroup>
